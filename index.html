@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>WAW Laundry Services</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+
+<body>
+   <div id="page-container">
+   		<div id="content-wrap">
+  			<div class="main-banner">
+  				
+  			</div>
+<!--header-->
+	 			<nav class="navbar navbar-expand-lg navbar-inverse">
+					<img src="c:/users/ladi/desktop/web dev/Laundry/wawOrijo.jpeg">
+					<a class="Home" href="index.html"></a>
+	  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+	  				</button>
+
+	  				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    			<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="our-services.html" role="button" aria-haspopup="true">Our Services</a>		
+							</li>
+	             			<li class="nav-item">
+              					<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Log In</a>
+            				</li>
+		    			</ul> 
+	  				</div>
+	    <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+  </div>
+	</nav>
+
+	<!-- body -->
+	<div class="container flex-center position-ref full-height">
+  		<div class="row">
+	    	<div class="col-xs-12">
+	    		<h1 class="name1"> Wash & Wear Laundry Services</h1>
+	      		<h1 class="text-capitalize hero-heading"> 21st Century Premium Laundry Service Provider</h1>
+	      		<blockquote class="hero-subheading blockquote-reverse"><p class="text-right">exceeding expectations...</p></blockquote>
+		      	<div class="text-center">
+		            <button class="btn-primary btn-lg my-2 my-sm-0" type="button" data-toggle="modal" data-target="#exampleModal">
+		            Check Laundry Status</button>
+		        </div>
+		        <p class="sign-up">not yet a customer?  <a class="signUp-link" href="sign-up.html">Sign up</a></p>
+	    	</div>
+  		</div>
+	</div>
+    
+	<!-- body -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog " role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Check Laundry Status</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<form class="Form-layout" id="status-form">
+			    <label for="status-email">Email address</label>
+			    <input type="email" class="form-control" id="status-email" aria-describedby="emailHelp" placeholder="Enter email" oninput="validateForm1()">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>  
+			    <label for="status-password">Password</label>
+			    <input type="password" class="form-control" id="status-password" placeholder="Password is case sensitive" oninput="validateForm1()">
+			    <label for="OrderID">Order ID</label>
+			    <input type="number" class="form-control" id="OrderID" aria-describedby="LastNameHelp" placeholder="Enter Your 6 digit ID number" oninput="validateForm1()">
+
+	      
+			    <div class="modal-footer">
+			        <button type="submit" id="status-button" class="btn btn-primary" disabled>Submit</button>
+			    </div>
+			</form>
+		</div>
+	    </div>
+	</div>
+   </div>
+   
+
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="loginModalLabel">Log in </h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form class="Form-layout">
+			    <label for="loginEmail"> Email address</label>
+			    <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="mail@example.com" oninput="validateForm2()">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>  
+			    <label for="loginPassword">Password</label>
+			    <input type="password" class="form-control" id="loginPassword" placeholder="Password is case sensitive" oninput="validateForm2()">
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="submit" class="btn btn-primary" id="loginButton" disabled>Log in</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!-- Footer -->
+	<section id="footer">
+		
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Contact Us</h5>
+					<ul class="list-unstyled quick-links">
+                        <i class="material-icons custom">place</i><li>Address</li>
+                        <p>Plot 5 Thomas Salako street, Surulere Lagos.</p>
+                        <i class="material-icons custom">phone_iphone</i><li>Telephone</li>
+                        <p>09059364112, 08163994461</p>
+                        <i class="material-icons custom">mail</i><li>E-Mail Address</li>
+                        <p>info@wawlaundry.com</p>
+					</ul>
+				</div>
+			    <div class="col-xs-12 col-sm-4 col-md-4 col align-self-center">
+					<div class="text-center">
+    			<img src="C:/Users/ladi/Desktop/web dev/Laundry/wawOrijo.jpeg" class="img-fluid" alt="Responsive image" style="padding-bottom: 20px;"></div>
+					<ul class="list-unstyled list-inline social text-center">	
+						 <a href="#"><i class ="fa fa-facebook">facebook</i></a>
+						 <a href="#"><i class="fa fa-twitter"> twitter </i></a>
+						 <a href="#"><i class="fa fa-instagram">instagram</i></a>
+				   </ul>	 
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 text-center text-white col align-self-center">
+					<p>Website Designed by <u>
+						<a href="https://www.hoxxatechnologies.com/">Hoxxa Technologies Limited</a>
+						</u>
+					</p>
+					<p class="h6">2019 &copy All right Reserved.</p>
+				</div>
+			</div>
+	</section>
+	<!-- ./Footer -->
+	<script> 
+		const email = document.getElementById('status-email');
+		const regEx = /\S+@\S+\.\S+/;
+		const button = document.getElementById('status-button');
+		const form = document.getElementById('status-form');
+		const password = document.getElementById('status-password');
+		const orderID = document.getElementById('OrderID')
+		const loginEmail = document.getElementById('loginEmail');
+		const loginPassword = document.getElementById('loginPassword');
+		const loginButton = document.getElementById('loginButton');
+
+	function validateForm1() {
+			if (regEx.test(email.value) && password.value !=="" && orderID.value !=="" && (orderID.value.length > 5) ){
+				button.style.backgroundColor = "#5d5dec";
+				button.disabled = false;
+			} else {
+				button.style.backgroundColor = "#979695";
+				button.disabled = true;
+			}
+
+		}
+	function  validateForm2(){
+			if ( loginPassword.value !=="" && (loginPassword.value.length > 5) && regEx.test(loginEmail.value)){
+				loginButton.style.backgroundColor = "#5d5dec";
+				loginButton.disabled = false;
+			} else {
+				loginButton.style.backgroundColor = "#979695";
+				loginButton.disabled = true;
+			}
+	}	
+		form.addEventListener('submit', function(event) {
+			event.preventDefault();
+			console.log('submitted');
+		});
+	</script>
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+</body>
+
+</html>
